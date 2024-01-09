@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(../fonts/Muli-Light.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather';
+}
+
+p, a {
+    font-family: 'Muli';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------------------------
+# Navbar
+------------------------------ */
+nav .nav-container {
+    background-color: whitesmoke;
+    font-family: 'Muli';
+}
+
+nav .nav-link {
+    color: black;
+}
+
+nav .nav-link:hover {
+    color: #ff5722;
+}
+
+nav .nav-link:active {
+    color: black;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: #ff5722;
+}
+
+nav .navbar-toggler {
+    background-color: black;
+}
+
+nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav .navbar-toggler {
+    border-color: black;
+    background-color: #293241;
+}
+
+nav #navbarCollapse {
+    background-color: 293241;
+}
+
+nav #brandname {
+    font-family: 'Courgette', cursive;
+}
+
+nav #searchbar {
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+
+nav #yourcart {
+    border-radius: 10px;
+}
+
+@media (min-width:992px) {
+    nav #yourcart {
+        background-color: #ff5722;
+        color: white;
+    }
+}
+
+
+@media (max-width:368px) {
+    nav #searchbar {
+        height: ;
+        width: 50vw;
+    }
+}
+
+@media (max-width:320px) {
+    nav #searchbar {
+        height: ;
+        width: 47vw;
+    }
+}
+
+/*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+#header {
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    background: url("../images/full_bg/3shoesbg.jpg") top left;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#header:before {
+    content: "";
+    /* background: rgba(255, 255, 255, 0.6); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header .container {
+    /* position: relative; */
+    bottom: 100px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 56px;
+    color: #222222;
+    font-family: Merriweather;
+}
+#header h1 span {
+    color: white;
+}
+
+#header h2 {
+    color: black;
+    margin: 5px 0 30px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Muli;
+}
+
+#header .btn-get-shop-now {
+    font-family: Alegraya;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #ff5722;
+    text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+    background: #247cf0;
+}
+
+@media (max-width: 768px) {
+    #header {
+        height: 120vw;
+    }
+    #header h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #header h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    #header .btn-get-shop-now{
+        font-size: 13px;
+    }
+}
+
+@media (max-height: 500px) {
+    #header {
+        height: 120vh;
+    }
+}
+
+/* ------------------------------
+#  Section
+------------------------------ */
+
+
+
+/* ------------------------------
+# Shop With Us Section
+------------------------------ */
+#shop-with-us {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.shop-with-us .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.shop-with-us .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.shop-with-us .icon-box:hover::before {
+    background: #ff5722;
+    top: 0;
+    border-radius: 0px;
+}
+
+.shop-with-us .icon {
+    margin-bottom: 15px;
+}
+
+.shop-with-us .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #ff5722;
+    transition: all 0.3s ease-in-out;
+}
+
+.shop-with-us .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.shop-with-us .title a {
+    color: #111;
+    font-family: Merriweather;
+    text-decoration: none;
+}
+
+.shop-with-us .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: Muli;
+}
+.shop-with-us .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+    color: #fff;
+}
+
+.shop-with-us .icon-box:hover .icon i {
+    color: #fff;
+}
+
+#shop-with-us-h2 {
+    font-family: Merriweather;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+/* ------------------------------
+# Main
+------------------------------ */
+
+
+/* ------------------------------
+# Product Section
+------------------------------ */
+.product_section a {
+    text-decoration: none;
+}
+.product_section .heading_container {
+    margin-bottom: 20px;
+}
+
+.product_section .box {
+    position: relative;
+    margin-top: 25px;
+    padding: 35px 35px;
+    background-color: #f7f8f9;
+    transition: all .3s;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
+    border: solid #fff 10px;
+}
+
+.product_section .box .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+}
+
+.product_section .box .img-box img {
+    max-width: 100%;
+    /* max-height: 160px; */
+    transition: all .3s;
+}
+
+.product_section .box .detail-box {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_section .box .detail-box h5 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product_section .box .detail-box h6 {
+    margin-top: 10px;
+    color: #002c3e;
+    font-weight: 600;
+}
+
+.product_section .box:hover img {
+    transform: scale(1.1);
+}
+
+.product_section .box:hover .option_container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.arrival_section {
+    background-color: #d4ced0;
+}
+
+.product_section .option_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+    transform: translateY(100%);
+}
+
+.product_section .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_section .options a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: 165px;
+    text-align: center;
+    transition: all .3s;
+    margin: 5px 0;
+}
+
+.product_section .options .option1 {
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
+    color: #ffffff;
+}
+
+.product_section .options .option1:hover {
+    background-color: transparent;
+    color: #ff5722;
+}
+
+.product_section .options .option2 {
+    background-color: #293241;
+    border: 1px solid #293241;
+    color: #ffffff;
+}
+
+.product_section .options .option2:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.product_section .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.product_section .btn-box a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
+    color: #ffffff;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.product_section .btn-box a:hover {
+    background-color: transparent;
+    color: #ff5722;
+}
+
+.product_section h2 {
+    font-size: 2em;
+}
+
+.product_section .option1 {
+    font-family: Muli;
+}
+
+.product_section .option2 {
+    font-family: Muli;
+}
+
+.product_section h5, h6 {
+    font-family: Merriweather;
+}
+/* ------------------------------
+# We Want To Hear You Section
+------------------------------ */
+.hear-you-section {
+    text-align: center;
+    color: white;
+}
+/* ------------------------------
+# About
+------------------------------ */
+.about {
+    text-align: center;
+    color: white;
+    background-color: #293241;
+}
+
+.about h2 {
+    font-family: Merriweather;
+}
+
+.about p {
+    font-family: Muli;
+}
+
+/* ------------------------------
+# Footer
+------------------------------ */
+footer {
+
+}
